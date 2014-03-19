@@ -22,6 +22,6 @@ echo "" >> $filename
 libs=`readelf -d $1 | grep library | cut -d[ -f2 | cut -d] -f1`;
 for line in $libs
 do
-    l=`echo $line | sed 's/\.so/==/g'`;
+    l=`echo $line | sed 's/\.so\./==/g'`;
     echo "$l" >> $filename
 done
