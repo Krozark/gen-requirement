@@ -6,7 +6,6 @@ echo "Get version for: $1";
 cmd='grep -oE [0-9]+\.[0-9]+\.[0-9]';
 v=`$1 --version | $cmd | head -n1`;
 
-echo $v;
 major=`echo $v | cut -d '.' -f1`;
 minor=`echo $v | cut -d '.' -f2`;
 patch=`echo $v | cut -d '.' -f3`;
