@@ -1,6 +1,10 @@
 #!/bin/bash
 
 filename="requirement.txt"
+if [[ -z $n ]]
+then
+    filename=$2
+fi
 #version
 echo "Get version for: $1";
 cmd='grep -oE [0-9]+\.[0-9]+\.[0-9]';
