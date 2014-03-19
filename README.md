@@ -6,6 +6,6 @@ A requirement.txt generator for binary files
 Usage
 ====
 
-    $>gen-requirement.sh <executable>
+    $>gen-requirement.sh <executable> <out>
 
-The output is put into "requirement.txt"
+The default output is requirement.txt
