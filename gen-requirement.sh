@@ -1,9 +1,9 @@
 #!/bin/bash
 
-filename="requirement.txt"
+filename=$2
 if [[ -z $n ]]
 then
-    filename=$2
+    filename="requirement.txt"
 fi
 #version
 echo "Get version for: $1";
