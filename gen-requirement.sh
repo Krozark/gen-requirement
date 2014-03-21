@@ -1,7 +1,7 @@
 #!/bin/bash
 
 filename=$2
-if [[ -z $n ]]
+if [[ -z $2 ]]
 then
     filename="requirement.txt"
 fi
@@ -13,6 +13,7 @@ v=`$1 --version | $cmd | head -n1`;
 major=`echo $v | cut -d '.' -f1`;
 minor=`echo $v | cut -d '.' -f2`;
 patch=`echo $v | cut -d '.' -f3`;
+
 
 echo "# File generated with gen-requirement" > $filename
 echo "#Soft : $1" >> $filename
